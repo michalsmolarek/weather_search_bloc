@@ -8,3 +8,12 @@ abstract class WeatherState {
 class WeatherInitial extends WeatherState {
   WeatherInitial();
 }
+
+class WeatherLoading extends WeatherState {
+  const WeatherLoading();
+}
+
+class WeatherLoaded extends WeatherState {
+  final Weather weather;
+  const WeatherLoaded({this.weather});
+}
